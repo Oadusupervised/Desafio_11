@@ -1,8 +1,8 @@
 import express,{Router} from 'express'
 import { productManager } from '../repositories/Managers/ProductManager.js';
 import { cartManager } from '../repositories/Managers/CartManager.js'
-import { postUsuariosController } from '../controllers/usuarios.controller.js';
-import * as sesionesController from '../controllers/sesiones.controller.js'
+import { postUsuariosController } from '../controllers/logeo-usuarios/usuarios.controller.js';
+import * as sesionesController from '../controllers/logeo-usuarios/sesiones.controller.js'
 import { sesionesRouter } from './sessions.router.js'
 import { usuariosRouter } from './usuarios.router.js';
 

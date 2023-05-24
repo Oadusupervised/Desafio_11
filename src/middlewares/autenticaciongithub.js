@@ -1,11 +1,11 @@
 import passport from 'passport'
 import { Strategy as LocalStrategy } from 'passport-local'
-import {criptografiador} from '../utils/bcrypt.js'
-import { usuariosManager } from '../managers/UserManager.js'
-import { ErrorDeAutenticacion } from '../entidades/errors/ErrorDeAutenticacion.js'
+import {criptografiador} from '../services/utils/bcrypt.js'
+import { usuariosManager } from '../repositories/managers/UserManager.js'
+import { ErrorDeAutenticacion } from '../models/entidades/errors/ErrorDeAutenticacion.js'
 import { Strategy as GithubStrategy } from 'passport-github2'
 import { githubCallbackUrl, githubClientSecret, githubClienteId } from '../config/auth.config.js'
-import { User } from '../entidades/User.js'
+import { User } from '../models/entidades/User.js'
 
 //TODO agregado para jwt desde acá ---------------------------------------------------------
 

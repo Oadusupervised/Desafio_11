@@ -1,5 +1,5 @@
 import { Router } from 'express'
-import { postSesionesController, deleteSesionesController } from '../controllers/sesiones.controller.js'
+import { postSesionesController, deleteSesionesController } from '../controllers/logeo-usuarios/sesiones.controller.js'
 import { antenticacionPorGithub_CB, autenticacionPorGithub, autenticacionLocal, autenticacionJwtApi } from '../middlewares/autenticaciongithub.js'
 import { afterLoginViewController } from '../middlewares/autenticaciongithub.js'
 

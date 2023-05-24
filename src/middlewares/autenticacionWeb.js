@@ -1,4 +1,4 @@
-import {criptografiador} from '../utils/bcrypt.js'
+import {criptografiador} from '../services/utils/bcrypt.js'
 
 export function extraerCredenciales(req,res,next){
   try{
